@@ -1,7 +1,11 @@
-#map { 
-    width: 100%; /* Adjusts width to fit the page*/
+#map {
+    width: 100%; /* Adjusts width to fit the page */
     height: 500px; 
-    margin: 0 auto; /* Center the map (optional) */
-    border: 1px solid #ccc; /* Optional styling */
-  }
-  
+    margin: 0 auto; /* Center the map */
+    border: 1px solid #ccc; /* Styling */
+    margin-top: 70px; /* Adjust the top margin to make room for the navbar */
+}
+
+#textContent {
+    margin-left: 32px;
+}
