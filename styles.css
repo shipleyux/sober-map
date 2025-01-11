@@ -1,0 +1,7 @@
+#map { 
+    width: 100%; /* Adjusts width to fit the page*/
+    height: 500px; 
+    margin: 0 auto; /* Center the map (optional) */
+    border: 1px solid #ccc; /* Optional styling */
+  }
+  
