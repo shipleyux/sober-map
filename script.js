@@ -25,15 +25,15 @@ const pubs = [
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    //L.marker([51.522220250000004,-0.1441884678939735]).addTo(map);
-    // copy these 
- // lucky saint pub 	51.522220250000004,-0.1441884678939735
 
  //Defining a function
  function makeMarkers(markerData) {
     //do stuff to each pub.
     markerData.forEach((pub) => { 
-        L.marker([pub.lat, pub.lon]).addTo(map);
+        const marker =  L.marker([pub.lat, pub.lon]);
+        marker.addTo(map);
+        marker.bindPopup("Hello");
+
     })
  }
  makeMarkers(pubs)
