@@ -24,6 +24,13 @@ const pubs = [
         lat: 51.5,
         lon: -0.07,
         rating: 4,
+    },
+
+    {
+        title: "Tonight Jospehine",
+        lat: 51.5,
+        lon: -0.11,
+        rating: 4,
     }
 
 ]
@@ -50,6 +57,12 @@ const pubs = [
         const marker =  L.marker([pub.lat, pub.lon]);
         marker.addTo(map);
         marker.bindPopup(popupHtml);
+
+       //code snippet from Leaflet amended cordinates for London
+        map.fitBounds([
+            [51.72, -0.57],
+            [51.25, -0.37]
+        ]);
 
     })
  }
