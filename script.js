@@ -63,8 +63,8 @@ const pubs = [
 
        //code snippet from Leaflet amended cordinates for London
         map.fitBounds([
-            [51.72, -0.57],
-            [51.25, -0.37]
+            [51.47, -0.09],
+            [51.55, -0.14]
         ]);
 
     })
