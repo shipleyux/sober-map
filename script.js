@@ -46,7 +46,10 @@ const pubs = [
     }).addTo(map);
 
 
- //Defining a function
+/**
+ * 
+ * @param {creates a marker} markerData 
+ */
  function makeMarkers(markerData) {
     //amends info for each pub
     markerData.forEach((pub) => { 
