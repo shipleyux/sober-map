@@ -9,3 +9,14 @@
 #textContent {
     margin-left: 32px;
 }
+
+.venue{
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.venue img{
+    width: 70px;
+    heaight:70px;
+}
