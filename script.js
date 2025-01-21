@@ -5,6 +5,7 @@ const pubs = [
         lat: 51.5,
         lon: -0.14,
         rating: 5,
+        area:
     },
     {
         title: "Redemption Bar",
@@ -69,6 +70,8 @@ const pubs = [
 
     })
  }
+
+ 
  makeMarkers(pubs)
 //Creation steps
  //1.Define array of pubs using json, included title, location (lat/long) and rating score.
