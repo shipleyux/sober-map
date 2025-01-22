@@ -76,9 +76,11 @@ const pubs = [
   const searchBar = document.querySelector("[data-search]"); // Links to the search bar input using data-search
   
   searchBar.addEventListener("input", e => {
-    const value = e.target.value;
-    console.log(value); // Logs the search input
+    const value = e.target.value.toUppercase;
   });
+
+  // Get all the list items in the pubs list
+  const thePubs = document.getElementById("pubs").getElementsByTagName("li");
   
   // Create the markers for the pubs on the map
   makeMarkers(pubs);
