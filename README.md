@@ -20,10 +20,6 @@ Sober Map is an interactive platform designed to normalize sobriety and promote 
 - **Mapping Tool**: [Insert Mapping API here, e.g., Google Maps API or Mapbox]
 - **Version Control**: Git and GitHub
 
-## Gitpod set up
-1. To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-python3 -m http.server
 
 ## Installation
 

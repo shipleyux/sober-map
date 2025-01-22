@@ -106,6 +106,7 @@ searchBar.addEventListener("input", e => {
   }
 });
 
+
 // Create the markers for the pubs on the map
 makeMarkers(pubs);
 
