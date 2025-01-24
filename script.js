@@ -8,6 +8,40 @@ const pubs = [
           rating: 5,
           area: "Central London" 
         },
+
+        {
+          title: "Albany Pub",
+          lat: 51.5245,
+          lon: -0.1443,
+          rating: 4,
+          area: "Central London" 
+        },
+
+        {
+          title: "Badger Badger",
+          lat: 51.47903,
+          lon: -0.02631,
+          rating: 4,
+          area: "Deptford"
+        },
+
+        {
+          title: "Claridges Bar",
+          lat: 51.5125,
+          lon: -0.1483,
+          rating: 5,
+          area: "Mayfair"
+        },
+
+        {
+          title: "Duck and Waffle",
+          lat: 51.5161,
+          lon: -0.0839,
+          rating: 4,
+          area: "Central London"
+        },
+
+    
         {
           title: "Redemption Bar",
           lat: 51.5,
