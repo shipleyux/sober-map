@@ -11,7 +11,9 @@
 }
 
 ul {
-    list-style: none;
+    list-style: none; /* remove bullets
 }
 
-
+.card {
+    margin-bottom: 38px; /* vertical card spacing
+}

@@ -1,41 +1,44 @@
 // List of pubs JSON
 const pubs = [
-  {
-    title: "Lucky Saint Pub",
-    lat: 51.5,
-    lon: -0.14,
-    rating: 5,
-    area: "Central London" 
-  },
-  {
-    title: "Redemption Bar",
-    lat: 51.5,
-    lon: -0.13,
-    rating: 3,
-    area: "Shoreditch"
-  },
-  {
-    title: "Club Soda Tasting Rooms",
-    lat: 51.5,
-    lon: -0.12,
-    rating: 5,
-    area: "Covent Garden"
-  },
-  {
-    title: "Mikkeller Bar",
-    lat: 51.5,
-    lon: -0.07,
-    rating: 4,
-    area: "London Bridge"
-  },
-  {
-    title: "Tonight Josephine",
-    lat: 51.5,
-    lon: -0.11,
-    rating: 4,
-    area: "Soho"
-  }
-];
+   
+        {
+          title: "Lucky Saint Pub",
+          lat: 51.5,
+          lon: -0.14,
+          rating: 5,
+          area: "Central London" 
+        },
+        {
+          title: "Redemption Bar",
+          lat: 51.5,
+          lon: -0.13,
+          rating: 3,
+          area: "Shoreditch"
+        },
+        {
+          title: "Club Soda Tasting Rooms",
+          lat: 51.5,
+          lon: -0.12,
+          rating: 5,
+          area: "Covent Garden"
+        },
+        {
+          title: "Mikkeller Bar",
+          lat: 51.5,
+          lon: -0.07,
+          rating: 4,
+          area: "London Bridge"
+        },
+        {
+          title: "Tonight Josephine",
+          lat: 51.5,
+          lon: -0.11,
+          rating: 4,
+          area: "Soho"
+        }
+    
+      ];
+  
 
 // Initialize the map
 const map = L.map('map');
@@ -93,8 +96,8 @@ searchBar.addEventListener("input", e => {
       // make it upper case
       title = title.toUpperCase();
 
-      // If the name includes our search term make it visible, else hide it
-      if (title.includes(value) ) {
+      // If the name includes first letter of search term make it visible, else hide it
+      if (title.startsWith(value) ) {
           thePub.style.display='';
           //thePub.style.visibility='visible';
         } else {
