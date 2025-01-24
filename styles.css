@@ -9,9 +9,13 @@
 #textContent {
     margin-left: 32px;
 }
+#pubs {
+    margin-top: 38px;
+}
 
 ul {
     list-style: none; /* remove bullets */
+   
 }
 
 .card {
