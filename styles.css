@@ -11,9 +11,14 @@
 }
 
 ul {
-    list-style: none; /* remove bullets
+    list-style: none; /* remove bullets */
 }
 
 .card {
-    margin-bottom: 38px; /* vertical card spacing
+    margin-bottom: 38px;
+}
+.card-img-top { /* keeps card image the same size on all cards */
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
 }
