@@ -1,77 +1,204 @@
 // List of pubs JSON
 const pubs = [
-   
-        {
-          title: "Lucky Saint Pub",
-          lat: 51.5,
-          lon: -0.14,
-          rating: 5,
-          area: "Central London" 
-        },
-
-        {
-          title: "Albany Pub",
-          lat: 51.5245,
-          lon: -0.1443,
-          rating: 4,
-          area: "Central London" 
-        },
-
-        {
-          title: "Badger Badger",
-          lat: 51.47903,
-          lon: -0.02631,
-          rating: 4,
-          area: "Deptford"
-        },
-
-        {
-          title: "Claridges Bar",
-          lat: 51.5125,
-          lon: -0.1483,
-          rating: 5,
-          area: "Mayfair"
-        },
-
-        {
-          title: "Duck and Waffle",
-          lat: 51.5161,
-          lon: -0.0839,
-          rating: 4,
-          area: "Central London"
-        },
-
+  
+    {
+      title: "Albany Pub",
+      lat: 51.5245,
+      lon: -0.1443,
+      rating: 4,
+      area: "Central London"
+    },
+    {
+      title: "Badger Badger",
+      lat: 51.47903,
+      lon: -0.02631,
+      rating: 4,
+      area: "Deptford"
+    },
+    {
+      title: "Claridge's Bar",
+      lat: 51.5125,
+      lon: -0.1483,
+      rating: 5,
+      area: "Mayfair"
+    },
+    {
+      title: "Club Soda Tasting Room",
+      lat: 51.5120,
+      lon: -0.1230,
+      rating: 5,
+      area: "Covent Garden"
+    },
+    {
+      title: "Duck and Waffle",
+      lat: 51.5161,
+      lon: -0.0839,
+      rating: 4,
+      area: "Central London"
+    },
+    {
+      title: "Empress Pub",
+      lat: 51.5401,
+      lon: -0.0329,
+      rating: 4,
+      area: "Hackney"
+    },
+    {
+      title: "Fox and Anchor",
+      lat: 51.5199,
+      lon: -0.1023,
+      rating: 4,
+      area: "Farringdon"
+    },
+    {
+      title: "Gold",
+      lat: 51.5147,
+      lon: -0.1991,
+      rating: 4,
+      area: "Notting Hill"
+    },
+    {
+      title: "Hawksmoor Bar Wood Wharf",
+      lat: 51.5047,
+      lon: -0.0186,
+      rating: 5,
+      area: "Canary Wharf"
+    },
+    {
+      title: "Island, The",
+      lat: 51.5359,
+      lon: -0.2214,
+      rating: 4,
+      area: "Kensal Rise"
+    },
+    {
+      title: "Lucky Saint Pub",
+      lat: 51.5194,
+      lon: -0.1492,
+      rating: 5,
+      area: "Central London"
+    },
+    {
+      title: "Redemption Bar",
+      lat: 51.5234,
+      lon: -0.0787,
+      rating: 3,
+      area: "Shoreditch"
+    },
+    {
+      title: "Tonight Josephine",
+      lat: 51.5138,
+      lon: -0.1298,
+      rating: 4,
+      area: "Soho"
+    },
+    {
+      title: "North Star",
+      lat: 51.5148,
+      lon: -0.3041,
+      rating: 4,
+      area: "Ealing"
+    },
+    {
+      title: "Ozone Coffee Roasters",
+      lat: 51.5261,
+      lon: -0.0875,
+      rating: 4,
+      area: "Shoreditch"
+    },
+    {
+      title: "Prince of Wales",
+      lat: 51.5345,
+      lon: -0.1414,
+      rating: 4,
+      area: "Camden"
+    },
+    {
+      title: "Q Shoreditch",
+      lat: 51.5238,
+      lon: -0.0815,
+      rating: 5,
+      area: "Shoreditch"
+    },
+    {
+      title: "Seed Library",
+      lat: 51.5233,
+      lon: -0.0805,
+      rating: 4,
+      area: "Shoreditch"
+    },
+    {
+      title: "Understudy",
+      lat: 51.5066,
+      lon: -0.1135,
+      rating: 3,
+      area: "Southbank"
+    },
     
-        {
-          title: "Redemption Bar",
-          lat: 51.5,
-          lon: -0.13,
-          rating: 3,
-          area: "Shoreditch"
-        },
-        {
-          title: "Club Soda Tasting Rooms",
-          lat: 51.5,
-          lon: -0.12,
-          rating: 5,
-          area: "Covent Garden"
-        },
-        {
-          title: "Mikkeller Bar",
-          lat: 51.5,
-          lon: -0.07,
-          rating: 4,
-          area: "London Bridge"
-        },
-        {
-          title: "Tonight Josephine",
-          lat: 51.5,
-          lon: -0.11,
-          rating: 4,
-          area: "Soho"
-        }
-    
-      ];
+    {
+      title: "Vins Bar",
+      lat: 51.5688,
+      lon: -0.0663,
+      rating: 4,
+      area: "East London"
+    },
+    {
+      title: "Zephyr",
+      lat: 51.5231,
+      lon: -0.0736,
+      rating: 5,
+      area: "London"
+    },
+    {
+      title: "John Snow Pub",
+      lat: 51.5131,
+      lon: -0.1379,
+      rating: 4,
+      area: "Soho"
+    },
+    {
+      title: "Kenzo Bar",
+      lat: 51.4842,
+      lon: -0.1688,
+      rating: 5,
+      area: "Chelsea"
+    },
+    {
+      title: "Lady Mildmay",
+      lat: 51.5462,
+      lon: -0.0924,
+      rating: 4,
+      area: "East London"
+    },
+    {
+      title: "Madison Bar",
+      lat: 51.5136,
+      lon: -0.0946,
+      rating: 3,
+      area: "St Paul's"
+    },
+    {
+      title: "Willian IV",
+      lat: 51.5461,
+      lon: -0.0322,
+      rating: 4,
+      area: "Hackney"
+    },
+    {
+      title: "XOYO",
+      lat: 51.5266,
+      lon: -0.0878,
+      rating: 3,
+      area: "Shoreditch"
+    },
+    {
+      title: "Yorkshire Grey",
+      lat: 51.5259,
+      lon: -0.1092,
+      rating: 4,
+      area: "North London"
+    }
+  ];
   
 
 // Initialize the map
