@@ -26,3 +26,47 @@ ul {
     height: 15vw;
     object-fit: cover;
 }
+
+  section.hero {
+    height: 39.75rem;
+    background-color: yellowgreen;
+  
+  
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 8.875rem;
+  }
+
+.hero-content {
+    position: absolute;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 1.5rem;
+    font-family: 'Poppins';
+    font-weight: bolder;
+  }
+
+  section.hero.contact {
+    background-image: url('../assets/images/contact-us2.jpg');
+  }  
+
+  .hero-content.contact {
+    /* Convert 200px to rem (based on a base font size of 16px) */
+
+    margin-top: 30rem;
+    max-width: 1000px;
+    }
+
+    form button {
+        margin-top: 1rem;
+      }
+
+      nav {
+        background-color: white;
+      }
+
+  
