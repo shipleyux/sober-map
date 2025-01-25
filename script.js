@@ -134,7 +134,7 @@ const pubs = [
       rating: 3,
       area: "Southbank"
     },
-    
+
     {
       title: "Vins Bar",
       lat: 51.5688,
