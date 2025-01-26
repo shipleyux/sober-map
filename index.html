@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="styles.css">
@@ -36,39 +36,44 @@
     </nav>
    
 
+    
     <!-- Map Container -->
     <div id="map">test</div>
     <section id="textContent">
      
        
         
-        <div class="container">
+  
          
         
         
             
 
-            <ul id="pubs">
-              <div class="container">
+          
+             
+              
                 <!-- Search Section -->
-                <div class="row mb-3">
-                    <div>
-                        <h1>Welcome to Sober Map</h1>
-                        <p>Want to see if a specific venue is on our London Sober Points list? Start typing the name in the search and see if it pops up.</p>
-                       
-                        </p>
-                    </div>
-                    
-                    <div class="col">
-                        <input id="searchBar" type="text" placeholder="Search by venue name..." class="form-control" data-search>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-dark">Search</button>
-                    </div>
+<div class="container mb-4">
+  <div class="row">
+      <div class="col-12">
+          <h1>Welcome to Sober Map</h1>
+          <p>Want to see if a specific venue is on our London Sober Points list? Start typing the name in the search and see if it pops up.</p>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-8">
+          <input id="searchBar" type="text" placeholder="Search by venue name here..." class="form-control" data-search>
+      </div>
+      <div class="col-md-4">
+          <button type="button" class="btn btn-dark w-100">Search</button>
+      </div>
+  </div>
+</div>   
                     <p>Don't see what you're looking for? </p>
                     <p><a href="contact.html">Drop us a message</a> and we'll try and get one of our reps to visit the venue and provide a score.</p>
-                </div>
+                
                   <!-- Card Section -->
+                  <ul id="pubs">
                 <li>
                   <div class="card" style="width: 18rem;">
                     <img src="assets/albany-pub.jpeg" class="card-img-top" alt="Alfred's Retreat">
@@ -384,8 +389,6 @@
                 
               </ul>
               
-              
-
           
     </section>
 

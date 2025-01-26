@@ -46,6 +46,8 @@ The project is built using **HTML5**, **CSS3**, **Bootstrap**, and **JavaScript*
   - Real-time updates to display matching venues.
 - **Contact Form**:
   - Users can submit feedback or request the addition of venues.
+- **Navigation Bar**:
+  - Users can easily navigate between the homepage and contact page using the Navbar, removing any need to use the back button.
 - **Responsive Design**:
   - Ensures compatibility with mobile and desktop devices.
 
