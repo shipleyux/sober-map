@@ -8,7 +8,9 @@
 - [Project Structure](#project-structure)
 - [Installation and Setup](#installation-and-setup)
 - [Deployment](#deployment)
-- [My Process](#my-process)
+- [Code Validation Testing](#code-validation-testing)
+- [Accessibility Testing](#accessibility-testing)
+- [My Javascript Process](#my-process)
 - [Attribution](#attribution)
 
 ---
@@ -128,7 +130,7 @@ The deployed project will now be accessible via the GitHub Pages URL provided.
 
 ---
 
-## Testing
+## Code Validation Testing
 1. **HTML Validator**:
 - Errors Found
  ![Site Mockup](assets/index-html-validation1.png)
@@ -147,14 +149,22 @@ The deployed project will now be accessible via the GitHub Pages URL provided.
 
 
 ## Accessibility Testing
-- **Contact Page**:
+**Home Page**:
+
+ **Fixes**
+- changed all H5 to H2 to avoid skipped level heading.
+- Add label tag to search bar
+
+ ![Site Mockup](assets/wave-index.png)
+
+**Contact Page**:
 
    ![Site Mockup](assets/wave-contact.png)
 
 
    
 
-## My Process
+## My Javascript Process
 
 When working on the map functionality, I needed to display all the venues dynamically. Initially, it felt overwhelming, but I realised the venues could be stored in a list, and JavaScript could be used to go through each one automatically.
 
