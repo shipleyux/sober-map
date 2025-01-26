@@ -1,61 +1,136 @@
 # Sober Map
 
-Sober Map is an interactive platform designed to normalize sobriety and promote inclusivity in social spaces. The project provides a curated experience for users seeking sober-friendly venues and resources, helping them make informed decisions about where to enjoy a night out without alcohol.
+## Table of Contents
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [User Stories](#user-stories)
+- [Project Structure](#project-structure)
+- [Installation and Setup](#installation-and-setup)
+- [Deployment](#deployment)
+- [Attribution](#attribution)
 
-## Features
+---
 
-- **Interactive Map**: Find venues with sober drink menus, highlighting inclusive practices in bars and restaurants.
-- **Venue Details**: Learn about venue offerings, such as non-alcoholic drink options and atmosphere.
+## Welcome to Sober Map
+   ![Site Mockup](assets/site-mockup.png)
+**Sober Map** is an interactive front-end website designed to support people in London seeking a sober lifestyle. 
 
-## User Stories
+**interactive map** of venues offering good non-alcoholic options, 
+The project is built using **HTML5**, **CSS3**, **Bootstrap**, and **JavaScript** with **Leaflet.js** for map interactivity. The website is fully responsive and ensures a seamless user experience across devices.
 
-### As a User
-1. I want to search for sober-friendly venues near me so I can plan a night out.
-2. I want to view information about venues, such as their sober score and location.
-3. I want to recommend new sober-friendly venues to the map to help expand the community.
+---
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Mapping Tool**: [Insert Mapping API here, e.g., Google Maps API or Mapbox]
-- **Version Control**: Git and GitHub
+- **HTML5**: For semantic structuring of the website.
+- **CSS3**: For styling and layout design.
+- **Bootstrap**: Used for the grid system, navigation bar, and responsive design components.
+- **JavaScript**: Core functionality for interactivity, including:
+  - Populating and managing map markers.
+  - Enabling a dynamic search bar for venues.
+  - Handling DOM manipulation and user inputs.
+- **Leaflet.js**: A JavaScript library for interactive maps.
+- **Google Fonts**: Fonts such as **Poppins** and **Roboto** for readability and aesthetics.
 
+---
 
-## Installation
+## Features
+
+- **Interactive Map**:
+  - Displays venues across London with good non-alcoholic drink options.
+  - Custom map markers with popups showing venue details like name, area, and rating.
+- **Venue Search**:
+  - A dynamic search bar allowing users to filter venues by name.
+  - Real-time updates to display matching venues.
+- **Contact Form**:
+  - Users can submit feedback or request the addition of venues.
+- **Responsive Design**:
+  - Ensures compatibility with mobile and desktop devices.
+
+---
+
+## User Stories
+
+### User Story 1: Exploring Venues
+**As a user**, I want to explore venues that offer non-alcoholic drink options, so I can find suitable places to socialise without alcohol.
+- **Implementation**: The interactive map lists venues with details and links for further information.
+
+### User Story 2: Searching for a Venue
+**As a user**, I want to search for a specific venue by name, so I can quickly find information on places I’m interested in.
+- **Implementation**: A search bar dynamically filters the venue list and updates the display.
+
+### User Story 3: Providing Feedback
+**As a user**, I want to contact the site creators to suggest new venues or ask questions, so I can contribute to the growing community.
+- **Implementation**: The Contact page includes a form for user messages.
+
+---
+
+## Project Structure
+
+### Files and Folders
+- **index.html**: The main Home page with the interactive map and podcasts.
+- **contact.html**: A form-based Contact page for user feedback.
+- **assets/**:
+  - **images/**: Venue images and hero images.
+- **css/**: Custom stylesheets for the website.
+- **scripts/**:
+  - `script.js`: Contains JavaScript for map interactivity and venue search.
+
+---
+
+## Installation and Setup
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/sober-map.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd sober-map
-    ```
-3. Open the `index.html` file in your browser to view the project.
+   ```bash
+   git clone https://github.com/shipleyux/sober-map.git
+   ```
+2. Open the project folder in your code editor.
+3. Open `index.html` in your browser to view the Home page.
+4. Ensure you're connected to the internet for external libraries like Bootstrap and Leaflet.js.
+
+---
 
 ## Deployment
 
-To deploy Sober Map, follow these steps:
+To deploy the Sober Map project, follow these steps:
 
-1. Push project to the `main` branch of your GitHub repository.
-2. Go to the repository settings.
-3. Under "Pages," select the `main` branch and `/root` directory as the source.
-4. Save settings. The project will be live at `https://<username>.github.io/<repository-name>`.
+1. **Prepare the Project**:
+   - Ensure all your files are updated and tested locally.
+   - Ensure that external libraries (e.g., Bootstrap, Leaflet.js) are correctly linked.
 
+2. **Push to GitHub**:
+   - Add all changes to your repository:
+     ```bash
+     git add .
+     git commit -m "Prepare for deployment"
+     git push origin main
+     ```
 
-## Testing Steps
+3. **Enable GitHub Pages**:
+   - Navigate to your repository on GitHub.
+   - Go to **Settings** > **Pages**.
+   - Under "Source," select the `main` branch and click **Save**.
+   - GitHub will generate a URL for your site (e.g., `https://username.github.io/repository-name`).
 
-1. place hold
+4. **Test the Deployment**:
+   - Open the GitHub Pages URL in your browser.
+   - Verify that all pages, links, and assets load correctly.
 
+5. **Find this site**:
+   - Visit the following link:
+   - https://shipleyux.github.io/sober-map
 
+The deployed project will now be accessible via the GitHub Pages URL provided.
 
-## Attributions
+---
 
+## Attribution
 
+- **Images**: Venue images and contact page header image are sourced from respective websites and Unsplash.
+- **JavaScript Libraries**:
+  - **Leaflet.js**: Used for map interactivity and code snippet to set map boundaries for London.
+  - **Bootstrap**: Used for responsive design.
+- **Google Fonts**: Fonts sourced from [Google Fonts](https://fonts.google.com).
 
-## Contact
-
-If you have any questions, suggestions, or feedback, feel free to contact us:
-
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- GitHub: [github.com/yourusername](https://github.com/yourusername)
+Special thanks to Spencer Bariball for his guidance throughout this project.

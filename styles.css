@@ -1,77 +1,87 @@
+/* General styling for the map container */
 #map {
     width: 100%; /* Adjusts width to fit the page */
-    height: 500px; 
+    height: 31.25rem; 
     margin: 0 auto; /* Center the map */
-    border: 1px solid #ccc; /* Styling */
-    margin-top: 70px; /* Adjust the top margin to make room for the navbar */
+    border: 0.0625rem solid #ccc; 
+    margin-top: 4.375rem; /* Adjust the top margin to make room for the navbar */
 }
 
+/* General content styling */
 #textContent {
-    margin-left: 32px;
+    margin-left: 2rem; 
 }
+
+/* Styling for the pubs list */
 #pubs {
-    margin-top: 38px;
+    margin-top: 2.375rem; 
 }
 
+/* Remove bullets from lists */
 ul {
-    list-style: none; /* remove bullets */
-   
+    list-style: none; /* Remove bullets */
 }
 
+/* Card styles */
 .card {
-    margin-bottom: 38px;
+    margin-bottom: 2.375rem; 
 }
-.card-img-top { /* keeps card image the same size on all cards */
+
+/* Ensures all card images are the same size */
+.card-img-top {
     width: 100%;
     height: 15vw;
-    object-fit: cover;
+    object-fit: cover; /* Keeps images proportional */
 }
 
-  section.hero {
-    height: 39.75rem;
-    background-color: yellowgreen;
-  
-  
+/* Styling for the hero section */
+section.hero {
+    height: 39.75rem; /* Maintains a consistent section height */
+
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: left;
     align-items: center;
-    padding-left: 8.875rem;
-  }
+    padding-left: 8.875rem; 
+}
 
+/* Hero section content styling */
 .hero-content {
-    position: absolute;
+    position: relative; /* Changed from absolute to relative */
     background-color: white;
-    height: fit-content;
-    width: fit-content;
-    padding: 1.5rem;
+    height: auto; 
+    width: auto; 
+    padding: 1.5rem; 
     font-family: 'Poppins';
     font-weight: bolder;
-  }
+    margin: 1rem auto; /* Center the content with auto margins */
+    max-width: 62.5rem; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* styling */
+    border-radius: 0.5rem; /* Rounded corners */
+}
 
-  section.hero.contact {
-    background-image: url('../assets/images/contact-us2.jpg');
-  }  
+/* Specific styling for the contact hero section */
+section.hero.contact {
+    background-image: url('../assets/megaphone.jpg');
+}
 
-  .hero-content.contact {
-    /* Convert 200px to rem (based on a base font size of 16px) */
+.hero-content.contact {
+    margin-top: 30rem; /* Adjust vertical spacing */
+    max-width: 62.5rem;
+}
 
-    margin-top: 30rem;
-    max-width: 1000px;
-    }
+/* Form button spacing */
+form button {
+    margin-top: 1rem; /* Add spacing above buttons */
+}
 
-    form button {
-        margin-top: 1rem;
-      }
+/* Navbar styling */
+nav {
+    background-color: white; /* Set a navbar color */
+}
 
-      nav {
-        background-color: white;
-      }
-
-      #searchBar {
-        margin-bottom: 16px;
-      }
-
-
-  
+/* Styling for the search bar */
+#searchBar {
+    margin-bottom: 1rem; 
+}
