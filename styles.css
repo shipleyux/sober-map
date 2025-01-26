@@ -67,9 +67,13 @@ section.hero.contact {
 }
 
 .hero-content.contact {
-    margin-top: 30rem; /* Adjust vertical spacing */
+    margin-top: 400px; /* Adjust vertical spacing */
     max-width: 62.5rem;
+    justify-content: center;
+    text-align: center;
+
 }
+
 
 /* Form button spacing */
 form button {
