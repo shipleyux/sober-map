@@ -16,7 +16,7 @@
 ---
 
 ## Welcome to Sober Map
-   ![Site Mockup](assets/site-mockup.png)
+   ![Site Mockup](assets/mock-up2.png)
 **Sober Map** is an interactive front-end website designed to support people in London seeking a sober lifestyle. 
 
 **interactive map** of venues offering good non-alcoholic options, 
@@ -76,8 +76,7 @@ The project is built using **HTML5**, **CSS3**, **Bootstrap**, and **JavaScript*
 ### Files and Folders
 - **index.html**: The main Home page with the interactive map and podcasts.
 - **contact.html**: A form-based Contact page for user feedback.
-- **assets/**:
-  - **images/**: Venue images and hero images.
+- **assets/**: Venue images and hero images.
 - **css/**: Custom stylesheets for the website.
 - **scripts/**:
   - `script.js`: Contains JavaScript for map interactivity and venue search.
@@ -147,6 +146,14 @@ The deployed project will now be accessible via the GitHub Pages URL provided.
 - **CSS Pass**:
    ![Site Mockup](assets/index-html.png)
 
+## Lighthouse Analysis ##
+ **Home Page**:
+
+ ![Site Mockup](assets/lh-home.png)
+
+ **Contact Page**:
+
+ ![Site Mockup](assets/lh-contact.png)
 
 ## Accessibility Testing
 **Home Page**:

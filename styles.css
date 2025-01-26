@@ -88,4 +88,5 @@ nav {
 /* Styling for the search bar */
 #searchBar {
     margin-bottom: 1rem; 
+    max-width: 300px;
 }
