@@ -127,6 +127,33 @@ To deploy the Sober Map project, follow these steps:
 The deployed project will now be accessible via the GitHub Pages URL provided.
 
 ---
+
+## Testing
+1. **HTML Validator**:
+- Errors Found
+ ![Site Mockup](assets/index-html-validation1.png)
+   - Fixes
+   - removed container element
+   - removed rougue paragraph tag
+   - remove redundant / from leaflet link
+   - moved ul tag to make structure compliant. 
+
+- **Index Page Pass After Fixes**:
+   ![Site Mockup](assets/index-html.png)
+- **Contact Page Pass**:
+   ![Site Mockup](assets/index-html.png)
+- **CSS Pass**:
+   ![Site Mockup](assets/index-html.png)
+
+
+## Accessibility Testing
+- **Contact Page**:
+
+   ![Site Mockup](assets/wave-contact.png)
+
+
+   
+
 ## My Process
 
 When working on the map functionality, I needed to display all the venues dynamically. Initially, it felt overwhelming, but I realised the venues could be stored in a list, and JavaScript could be used to go through each one automatically.

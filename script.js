@@ -251,7 +251,7 @@ searchBar.addEventListener("input", e => {
   
       thePub = thePubs[i];
       // get the title text
-      titleTag = thePub.getElementsByTagName('h5')[0];
+      titleTag = thePub.getElementsByTagName('h2')[0];
       title = titleTag.textContent || titleTag.innerText;
 
       // make it upper case
