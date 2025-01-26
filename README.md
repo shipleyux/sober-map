@@ -8,6 +8,7 @@
 - [Project Structure](#project-structure)
 - [Installation and Setup](#installation-and-setup)
 - [Deployment](#deployment)
+- [My Process](#my-process)
 - [Attribution](#attribution)
 
 ---
@@ -124,6 +125,13 @@ To deploy the Sober Map project, follow these steps:
 The deployed project will now be accessible via the GitHub Pages URL provided.
 
 ---
+## My Process
+
+When working on the map functionality, I needed to display all the venues dynamically. Initially, it felt overwhelming, but I realised the venues could be stored in a list, and JavaScript could be used to go through each one automatically.
+
+By creating a structured list of venue details (like name, location, and rating), I was able to use a simple loop to handle them all. For each venue in the list, the code would add a marker to the map and display the details in a popup. This made the process feel manageable and gave me a lot of control over how each venue appeared on the map.
+
+Later, when working on the search bar, I noticed a small issue where typing part of a venue’s name could bring up multiple results that weren’t relevant. To fix this, I changed the search functionality to check if the venue names **start with** the search term, rather than just checking if they **include** it. This made the results more precise and avoided confusion.
 
 ## Attribution
 

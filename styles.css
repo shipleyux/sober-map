@@ -63,7 +63,7 @@ section.hero {
 
 /* Specific styling for the contact hero section */
 section.hero.contact {
-    background-image: url('../assets/megaphone.jpg');
+    background-image: url('../assets/contact.jpg');
 }
 
 .hero-content.contact {
