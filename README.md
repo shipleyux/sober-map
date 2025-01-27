@@ -145,6 +145,20 @@ The deployed project will now be accessible via the GitHub Pages URL provided.
    ![Site Mockup](assets/index-html.png)
 - **CSS Pass**:
    ![Site Mockup](assets/index-html.png)
+- **JSLint**:
+
+- *Here is a breakdown of the fixes implemented to correct the JSlint warnings* 
+- Use 4 spaces for each level of indentation.
+- Correct placement of braces.
+- Remove trailing spaces
+- add one space after commas in arrays and objects.
+- correct function formatting.
+- use double quotes instead of single quotes for strings.
+- remove extra spaces between elements.
+- Add missing global declaration for the leaflet api. 
+
+   ![Site Mockup](assets/jslint.png)
+
 
 ## Lighthouse Analysis ##
  **Home Page**:
