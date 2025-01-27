@@ -10,6 +10,7 @@
 - [Deployment](#deployment)
 - [Code Validation Testing](#code-validation-testing)
 - [Accessibility Testing](#accessibility-testing)
+- [Manual User Testing](#manual-user-testing)
 - [My Javascript Process](#my-process)
 - [Attribution](#attribution)
 
@@ -130,23 +131,26 @@ The deployed project will now be accessible via the GitHub Pages URL provided.
 ---
 
 ## Code Validation Testing
-1. **HTML Validator**:
-- Errors Found
+**HTML Validator**:
+Errors Found
  ![Site Mockup](assets/index-html-validation1.png)
- 
+
    Fixes
    - removed container element
    - removed rougue paragraph tag
    - remove redundant / from leaflet link
    - moved ul tag to make structure compliant. 
 
-- **Index Page Pass After Fixes**:
+ **Index Page Pass After Fixes**:
    ![Site Mockup](assets/index-html.png)
-- **Contact Page Pass**:
+
+ **Contact Page Pass**:
    ![Site Mockup](assets/index-html.png)
-- **CSS Pass**:
+
+ **CSS Pass**:
    ![Site Mockup](assets/index-html.png)
-- **JSLint**:
+
+**JSLint**:
 
 *Here is a breakdown of the fixes implemented to correct the JSlint warnings* 
 - Use 4 spaces for each level of indentation.
@@ -182,6 +186,10 @@ The deployed project will now be accessible via the GitHub Pages URL provided.
 **Contact Page**:
 
    ![Site Mockup](assets/wave-contact.png)
+
+## Manual User Testing
+- User understood the layout and was able to see sober scores and venue names using the map in a way that aligned with the outlined users stories.
+- User was able to search for venues in the menu bar to see more information or navigate to the contact page when venue didn't appear. 
 
 
    
