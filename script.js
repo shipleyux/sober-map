@@ -279,3 +279,4 @@ makeMarkers(pubs);
 
 // 4. Calling the function to create and
 //display the markers on the map.
+
