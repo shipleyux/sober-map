@@ -133,7 +133,8 @@ The deployed project will now be accessible via the GitHub Pages URL provided.
 1. **HTML Validator**:
 - Errors Found
  ![Site Mockup](assets/index-html-validation1.png)
-   - Fixes
+ 
+   Fixes
    - removed container element
    - removed rougue paragraph tag
    - remove redundant / from leaflet link
@@ -147,7 +148,7 @@ The deployed project will now be accessible via the GitHub Pages URL provided.
    ![Site Mockup](assets/index-html.png)
 - **JSLint**:
 
-- *Here is a breakdown of the fixes implemented to correct the JSlint warnings* 
+*Here is a breakdown of the fixes implemented to correct the JSlint warnings* 
 - Use 4 spaces for each level of indentation.
 - Correct placement of braces.
 - Remove trailing spaces
