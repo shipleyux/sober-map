@@ -280,3 +280,35 @@ makeMarkers(pubs);
 // 4. Calling the function to create and
 //display the markers on the map.
 
+
+//MODAL 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const openButtons = document.querySelectorAll(".open-modal-btn");
+    const closeButtons = document.querySelectorAll(".close-modal-btn");
+  
+    openButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const modalId = button.getAttribute("data-modal");
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.style.display = "block";
+        }
+      });
+    });
+  
+    closeButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const modal = button.closest(".modal");
+        modal.style.display = "none";
+      });
+    });
+  
+    window.addEventListener("click", function (event) {
+      if (event.target.classList.contains("modal")) {
+        event.target.style.display = "none";
+      }
+    });
+  });
+
+
