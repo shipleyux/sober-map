@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
       const submittedModal = new bootstrap.Modal(modalElement);
       submittedModal.show();
       contactForm.reset();
-      // ⏱️ Auto-close modal after 5 seconds
+      // Auto-close modal after 5 seconds
       setTimeout(() => {
         submittedModal.hide();
       }, 5000);
