@@ -239,7 +239,10 @@ function makeMarkers(markerData) {
         ]);
     });
 }
-
+setTimeout(() => {
+    map.invalidateSize();
+  }, 100);
+  
 // Venue search bar
 const venueCardTemplate = document.querySelector("[data-venue-template]");
 const searchBar = document.querySelector("[data-search]");
