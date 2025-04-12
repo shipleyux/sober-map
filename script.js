@@ -287,4 +287,26 @@ makeMarkers(pubs);
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const modalElement = document.getElementById("venueModal");
+    const modal = new bootstrap.Modal(modalElement);
+    const modalTitle = document.getElementById("venueModalLabel");
+    const modalBody = document.getElementById("venueModalBody");
+    const modalLink = document.getElementById("venueModalLink");
+  
+    document.querySelectorAll(".open-modal").forEach(button => {
+      button.addEventListener("click", () => {
+        const title = button.getAttribute("data-title");
+        const body = button.getAttribute("data-body");
+        const link = button.getAttribute("data-link");
+  
+        modalTitle.textContent = title;
+        modalBody.innerHTML = body;
 
+        modalLink.href = link;
+  
+        modal.show(); // open the modal
+      });
+    });
+  });
+  
