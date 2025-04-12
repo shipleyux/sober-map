@@ -188,8 +188,52 @@ Errors Found
    ![Site Mockup](assets/wave-contact.png)
 
 ## Manual User Testing
-- User understood the layout and was able to see sober scores and venue names using the map in a way that aligned with the outlined users stories.
-- User was able to search for venues in the menu bar to see more information or navigate to the contact page when venue didn't appear. 
+
+ User Stories and Testing
+👤 As a site visitor
+1. I want to view a list of sober-friendly venues
+Acceptance Criteria / Tests Performed:
+
+Venue cards load on page visit
+
+Each card displays venue name, image, short description, Sober Points, and link
+
+All venues appear consistently across reloads
+
+2. I want to search for a specific venue by name
+Acceptance Criteria / Tests Performed:
+
+Typing into the search bar filters results live
+
+Matching venues stay visible; others are hidden
+
+Clearing the input resets the full list
+
+3. I want to click a “More Info” button to see extra details
+Acceptance Criteria / Tests Performed:
+
+Clicking "More Info" triggers a Bootstrap modal
+
+Modal displays custom content based on the clicked venue
+
+Modal closes properly on clicking "Close" or outside area
+
+4. I want to view venues on an interactive map
+Acceptance Criteria / Tests Performed:
+
+Leaflet map initializes on page load
+
+Pins appear for each venue with correct coordinates
+
+Clicking a pin shows popup with venue title, Sober Points, and area
+
+5. I want the layout to work on both desktop and mobile
+Acceptance Criteria / Tests Performed:
+
+Tested on various screen sizes using browser dev tools
+
+Map and venue list stack vertically on mobile
+
 
 
    
