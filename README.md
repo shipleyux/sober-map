@@ -189,50 +189,24 @@ Errors Found
 
 ## Manual User Testing
 
- User Stories and Testing
-👤 As a site visitor
-1. I want to view a list of sober-friendly venues
-Acceptance Criteria / Tests Performed:
+## User Stories and Testing
 
-Venue cards load on page visit
+### As a site visitor
 
-Each card displays venue name, image, short description, Sober Points, and link
+| User Story | Acceptance Criteria / Tests Performed |
+|------------|----------------------------------------|
+| I want to view a list of sober-friendly venues | - Venue cards load on page visit<br>- Each card displays venue name, image, short description, Sober Points, and link<br>- All venues appear consistently across reloads |
+| I want to search for a specific venue by name | - Typing into the search bar filters results live<br>- Matching venues stay visible; others are hidden<br>- Clearing the input resets the full list |
+| I want to click a “More Info” button to see extra details | - Clicking "More Info" triggers a Bootstrap modal<br>- Modal displays custom content based on the clicked venue<br>- Modal closes properly on clicking "X" or outside area |
+| I want to view venues on an interactive map | - Leaflet map initialises on page load<br>- Pins appear for each venue with correct coordinates<br>- Clicking a pin shows popup with venue title, Sober Points, and area |
+| I want the layout to work on both desktop and mobile | - Tested on various screen sizes using browser dev tools<br>- Map and venue list stack vertically on mobile<br>- Navigation is accessible via a toggler on smaller screens |
 
-All venues appear consistently across reloads
+### As a content editor (admin)
 
-2. I want to search for a specific venue by name
-Acceptance Criteria / Tests Performed:
-
-Typing into the search bar filters results live
-
-Matching venues stay visible; others are hidden
-
-Clearing the input resets the full list
-
-3. I want to click a “More Info” button to see extra details
-Acceptance Criteria / Tests Performed:
-
-Clicking "More Info" triggers a Bootstrap modal
-
-Modal displays custom content based on the clicked venue
-
-Modal closes properly on clicking "Close" or outside area
-
-4. I want to view venues on an interactive map
-Acceptance Criteria / Tests Performed:
-
-Leaflet map initializes on page load
-
-Pins appear for each venue with correct coordinates
-
-Clicking a pin shows popup with venue title, Sober Points, and area
-
-5. I want the layout to work on both desktop and mobile
-Acceptance Criteria / Tests Performed:
-
-Tested on various screen sizes using browser dev tools
-
-Map and venue list stack vertically on mobile
+| User Story | Acceptance Criteria / Tests Performed |
+|------------|----------------------------------------|
+| I want to update venue info without breaking the modal | - Venue details (title, description, opening times) are added using `data-*` attributes in the HTML<br>- No JavaScript changes are required per venue update<br>- Non-breaking HTML tags (e.g., `<p>`, `<br>`, `<strong>`) render safely in modals |
+| I want to ensure all modals work dynamically | - Reusable Bootstrap modal displays unique content for each venue<br>- Modal updates dynamically based on button’s `data-title`, `data-body`, and `data-link`<br>- Tested multiple venues to confirm no conflict or overlap |
 
 
 
