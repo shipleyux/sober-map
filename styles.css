@@ -82,8 +82,8 @@ form button {
 /* Navbar styling */
 nav {
     background-color: white; /* Set a navbar color */
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
 }
 
 /* Styling for the search bar */
@@ -100,11 +100,11 @@ nav {
   
   #map {
     height: 100%;
-    min-height: 300px;
+    min-height: 18.75rem;
   }
   
   #venue-list {
-    height: calc(100vh - 80px); 
+    height: calc(100vh - 5rem); 
     overflow: hidden; /* prevent double scroll */
   }
   
@@ -124,7 +124,7 @@ nav {
 
   #map {
    
-    margin-right: 50px;
+    margin-right: 3.125rem;
   
   }
   
