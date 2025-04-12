@@ -63,6 +63,7 @@ section.hero {
 /* Specific styling for the contact hero section */
 section.hero.contact {
     background-image: url('assets/orange-megaphone.jpg');
+    margin-top: 70px;
 }
 
 .hero-content.contact {
@@ -81,7 +82,8 @@ form button {
 /* Navbar styling */
 nav {
     background-color: white; /* Set a navbar color */
-
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* Styling for the search bar */
@@ -118,5 +120,11 @@ nav {
   body, html {
     height: 100%;
     overflow: hidden;
+  }
+
+  #map {
+   
+    margin-right: 50px;
+  
   }
   
