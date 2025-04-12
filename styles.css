@@ -81,6 +81,7 @@ form button {
 /* Navbar styling */
 nav {
     background-color: white; /* Set a navbar color */
+
 }
 
 /* Styling for the search bar */
@@ -91,12 +92,6 @@ nav {
 
 
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
   .custom-map-section {
     height: 90vh;
   }
@@ -104,5 +99,24 @@ html, body {
   #map {
     height: 100%;
     min-height: 300px;
+  }
+  
+  #venue-list {
+    height: calc(100vh - 80px); 
+    overflow: hidden; /* prevent double scroll */
+  }
+  
+  #venueScrollList {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  #searchHeader {
+    padding-top: 0.5rem; 
+  }
+ /* stops whole page scroll */
+  body, html {
+    height: 100%;
+    overflow: hidden;
   }
   

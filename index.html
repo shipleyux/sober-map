@@ -41,28 +41,26 @@
     <!-- Map Container -->
     <div id="venue-list" class="w-100 w-lg-50 overflow-auto p-3">
 
-    <section id="textContent">
-                         
-    <!-- Search Section -->
-<div class="container mt-4 mb-4">
-  <div class="row">
-      <div class="col-12">
-          <h1>Welcome to Sober Map</h1>
-          <p>Want to see if a specific venue is on our London Sober Points list? Start typing the name in the search and see if it pops up.</p>
+<!--Search content-->
+<section id="textContent" class="d-flex flex-column h-100">
+  <!-- Sticky Search Header -->
+  <div id="searchHeader">
+    <div class="container">
+      <h1>Welcome to Sober Map</h1>
+      <p>Want to see if a specific venue is on our London Sober Points list?</p>
+      <div class="row">
+        <div class="col-md-8">
+          <label for="searchBar" class="form-label">Venue search</label>
+          <input id="searchBar" type="text" class="form-control" placeholder="Search by venue name here..." data-search>
+        </div>
       </div>
+      <p>Don't see what you're looking for? <a href="contact.html">Drop us a message</a></p>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-md-8">
-      <label for="searchBar" class="form-label">Venue search</label>
-      <input id="searchBar" type="text" placeholder="Search by venue name here..." class="form-control" data-search>
-  </div>
-   
-  </div>
-  <p>Don't see what you're looking for? </p>
-                    <p><a href="contact.html">Drop us a message</a> and we'll try and get one of our reps to visit the venue and provide a score.</p>
-               
+                    
                   <!-- Card Section -->
-                  <ul id="pubs">
+                  <div id="venueScrollList" class="overflow-auto flex-grow-1 px-3">
+                    <ul id="pubs">
                     <li>
                       <div class="card" style="width: 18rem;">
                         <img src="assets/albany2.jpg" class="card-img-top" alt="Albany Pub">
