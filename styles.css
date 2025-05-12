@@ -81,9 +81,8 @@ form button {
 
 /* Navbar styling */
 nav {
-    background-color: white; /* Set a navbar color */
-    margin-left: 3.125rem;
-    margin-right: 3.125rem;
+  background-color: white;
+  width: 100%;
 }
 
 /* Styling for the search bar */
@@ -115,11 +114,6 @@ nav {
   
   #searchHeader {
     padding-top: 0.5rem; 
-  }
- /* stops whole page scroll */
-  body, html {
-    height: 100%;
-    overflow: hidden;
   }
 
   #map {
