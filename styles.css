@@ -1,12 +1,15 @@
 /* General styling for the map container */
 #map {
   width: 100%;
-  height: 100%;
-  min-height: 40rem; /* Increase to make a taller map */
-  margin: 0 auto;
-  margin-top: 4.375rem;
-  margin-right: 3.125rem;
+  min-height: 300px; /* Makes it visible on mobile */
+  height: 100%;       /* Fills available space */
   border: 1px solid #ccc;
+}
+
+@media (min-width: 992px) {
+  #map {
+    height: 40rem; /* Larger map on desktop */
+  }
 }
 
 /* General content styling */
@@ -107,9 +110,17 @@ nav {
 
 
 
+.custom-map-section {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
   .custom-map-section {
-    height: 90vh;
+    flex-direction: row;
+    height: auto;
   }
+}
   
   
   #venue-list {
