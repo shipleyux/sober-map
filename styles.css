@@ -81,36 +81,38 @@ section.hero {
     border-radius: 0.5rem; /* Rounded corners */
 }
 
-/* Specific styling for the contact hero section */
+/* Base contact hero styles */
 section.hero.contact {
   background-color: black;
-  margin-top: 70px;
-  height: 39.75rem;
+  margin-top: 4.5rem; /* Match navbar height */
+  height: 18rem; 
   display: flex;
-  justify-content: center;  /* center horizontally */
-  align-items: center;      /* center vertically */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 0 1rem;
+  padding: 1rem; /* Keep content from touching edges */
+  border-top: 1px solid #ddd; /* adds a divider from navbar */
 }
 
+/* Adjust height for larger screens */
 @media (min-width: 768px) {
   section.hero.contact {
-    width: 100%;
-    height: 39.75rem;
-    aspect-ratio: 16/9; /* improves LCP prediction */
+    height: 20rem;
   }
 }
 
 .hero-content.contact {
   background-color: white;
-  padding: 1.5rem;
+  padding: 1rem;
   font-family: 'Poppins';
   font-weight: bolder;
-  max-width: 62.5rem;
+  max-width: 48rem;
+  width: 100%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  margin: 0 auto;
 }
+
+
 
 /* Form button spacing */
 form button {

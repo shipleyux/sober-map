@@ -75,3 +75,17 @@ After submitting the email form and closing the modal, the screen refreshed unex
 **Files updated:**
 - `script.js`
 
+### 🛠️ Bug Fix: Favicon 404 Error
+
+**Issue:**  
+Browsers were returning a 404 error when trying to fetch `/favicon.ico`, as no favicon file was present at the root level of the site.
+
+**Fix:**  
+- Converted the project's logo to `.ico` format using an online favicon generator.
+- Placed `favicon.ico` in the root directory of the project.
+- Added the following line to the `<head>` of all HTML pages:
+
+```html
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+

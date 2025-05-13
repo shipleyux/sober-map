@@ -284,6 +284,9 @@ Following feedback, I made several improvements to the project to enhance usabil
 - **Hero Image Fix:**  
   I fixed the broken hero image on the contact page so the layout now matches the rest of the site and looks more polished.
 
+- **Added a custom favicon:** 
+Converted the project logo into a `.ico` format and added it to the site root. This eliminates the default 404 favicon error and improves site polish by displaying a branded icon in browser tabs.
+
 All of these changes were tested manually and are logged in both the [Bug Fix Report](bug-report.md) and [Manual Testing Report](testing.md).
 
 
