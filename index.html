@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
+
+
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <!-- Leaflet JS -->
@@ -34,6 +36,15 @@
       </div>
     </div>
   </nav>
+
+  <!-- Hero Section -->
+<section class="hero-section text-center py-5 bg-light">
+  <div class="container">
+    <h1 class="display-4">Find the Best Alcohol-Free Spots in London</h1>
+    <p class="lead">Curated venues with great sober options – discover your new favourite place.</p>
+  </div>
+</section>
+
    
   <main class="container-fluid mt-5 px-3">
     <div class="row flex-column-reverse flex-lg-row">
@@ -42,8 +53,6 @@
 
         <section>
           <div class="container mb-4">
-            <h1 class="mt-5">Welcome to Sober Map</h1>
-
             <p>Want to see if a specific venue is on our London Sober Points list?</p>
             <div class="row">
               <div class="col-md-8">
@@ -61,7 +70,10 @@
                     <ul id="pubs" class="list-unstyled">
                     <li>
                       <div class="card h-100">
-                        <img src="assets/albany2.jpg" class="card-img-top" alt="Albany Pub">
+                        <picture>
+                          <source srcset="assets/albany2w.webp" type="image/webp">
+                          <img src="assets/albany2.jpg" class="card-img-top" alt="Albany Pub">
+                        </picture>                        
                         <div class="card-body">
                           <h2 class="card-title">Albany Pub</h2>
                           <p class="card-text">
@@ -784,6 +796,7 @@
                   </div>
                 </section>
               </div>
+
               <div class="col-12 col-lg-6">
                 <div id="map" class="rounded shadow-sm" style="height: 400px;"></div>
               </div>
@@ -812,7 +825,8 @@
 
 
 <!--Custom JavaScript -->
-<script src="script.js"></script>
+<script src="script.js" defer></script>
+
 
 <!-- Bootstrap Bundle with Popper.js (needed for modals) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

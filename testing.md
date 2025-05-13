@@ -66,4 +66,13 @@ During development, I carried out manual testing across different features of th
 
 ---
 
+### Hero Image Removal for Performance Improvement
+
+To improve the site's performance metrics—particularly **Largest Contentful Paint (LCP)** and **First Contentful Paint (FCP)**—the hero background image on the contact page was removed and replaced with a solid background color.
+
+Hero images, especially large or uncompressed ones, can significantly delay the time it takes for meaningful content to appear on screen. By removing the image, we reduced the overall **page weight**, improved **load speed**, and provided a faster, more responsive experience, particularly on mobile devices or slower connections.
+
+This change contributed to an increase in the Lighthouse **Performance** score without negatively affecting the user experience or design clarity.
+
+
 Overall, manual testing helped me catch and fix a few key issues with modals and layout. Everything now works as expected across devices, and all bug fixes are documented in detail in the [Bug Fix Report](bug-report.md).

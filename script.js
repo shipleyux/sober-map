@@ -208,6 +208,8 @@ const pubs = [
 const map = L.map("map");
 map.setView([52.488, -0.89], 7);
 
+
+
 // Add a tile layer
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: (
@@ -232,17 +234,15 @@ function makeMarkers(markerData) {
         const marker = L.marker([pub.lat, pub.lon]);
         marker.addTo(map);
         marker.bindPopup(popupHtml);
-
-        map.fitBounds([
-            [51.47, -0.09],
-            [51.55, -0.14]
-        ]);
     });
+
+    map.fitBounds([
+        [51.47, -0.09],
+        [51.55, -0.14]
+    ]);
 }
-setTimeout(() => {
-    map.invalidateSize();
-  }, 100);
-  
+
+
 // Venue search bar
 const venueCardTemplate = document.querySelector("[data-venue-template]");
 const searchBar = document.querySelector("[data-search]");
