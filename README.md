@@ -5,6 +5,7 @@
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [User Stories](#user-stories)
+- [Wireframes](#wireframes)
 - [Project Structure](#project-structure)
 - [Installation and Setup](#installation-and-setup)
 - [Deployment](#deployment)
@@ -53,6 +54,13 @@ The project is built using **HTML5**, **CSS3**, **Bootstrap**, and **JavaScript*
   - Users can easily navigate between the homepage and contact page using the Navbar, removing any need to use the back button.
 - **Responsive Design**:
   - Ensures compatibility with mobile and desktop devices.
+
+---
+
+## Wireframes
+These wireframes show the early ideas for how the site would look and work. They helped me plan the layout, features, and user journey before building the site.
+
+![Site Mockup](assets/wireframes.png)
 
 ---
 
@@ -189,7 +197,7 @@ Errors Found
 
 ## Manual User Testing
 
-## User Stories and Testing
+
 
 ### As a site visitor
 
