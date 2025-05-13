@@ -1,16 +1,20 @@
 /* General styling for the map container */
 #map {
   width: 100%;
-  min-height: 300px; /* Makes it visible on mobile */
-  height: 100%;       /* Fills available space */
+  min-height: 300px;
+  height: 300px;
   border: 1px solid #ccc;
 }
 
+
 @media (min-width: 992px) {
   #map {
-    height: 40rem; /* Larger map on desktop */
+    height: 75vh; /* Match venueScrollList for balanced height */
   }
 }
+
+
+
 
 /* General content styling */
 #textContent {
@@ -128,11 +132,6 @@ nav {
     overflow: hidden; /* prevent double scroll */
   }
   
-  #venueScrollList {
-    height: 100%;
-    overflow-y: auto;
-  }
-  
   #searchHeader {
     padding-top: 0.5rem; 
   }
@@ -147,4 +146,22 @@ nav {
   #pubs li {
     list-style: none;
   }
+  
+  #venueScrollList {
+    max-height: 60vh; /* Allow scrolling space on mobile */
+    overflow-y: auto;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 62rem) {
+    #venueScrollList {
+      max-height: 75vh;
+    }
+  }
+  
+
+  body {
+    padding-top: 4.5rem; /* Adjust based on navbar height */
+  }
+  
   

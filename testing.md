@@ -26,11 +26,19 @@ During development, I carried out manual testing across different features of th
 
 ### Responsive Layout (Map + Venue List)
 
-- **Issue flagged:** On mobile, the map was getting pushed awkwardly to the bottom or squashed due to fixed layout styling.
-- **Fix applied:** Used Bootstrap responsive classes like `flex-column` and added custom CSS to improve layout across screen sizes. Also triggered `map.invalidateSize()` to fix rendering after layout shifts.
-- **Tested by:** Using Chrome DevTools to check iPhone and Android screen sizes.
-- **Result:** Venue list and map stack correctly on mobile; layout looks clean.
-- Confirmed working after fix.
+- **Issue flagged:** On mobile, the map was being pushed awkwardly to the bottom or squashed due to fixed layout styling.
+- **Fix applied:** Used Bootstrap responsive classes like `flex-column` on smaller screens and `flex-row` on larger ones. Added custom CSS to define consistent height in `rem` units and used `map.invalidateSize()` to fix rendering after layout shifts. Ensured that scroll behavior on the venue list was retained.
+- **Testing process:** 
+  - Used Chrome DevTools to simulate various mobile screen sizes (iPhone, Pixel, Galaxy).
+  - Manually resized the browser window to observe map and card behavior at different breakpoints.
+  - Applied `overflow-y: auto` to the venue container and adjusted max-heights.
+- **Outcome:** 
+  - The venue list and map now stack correctly on mobile and appear side-by-side on desktop.
+  - Venue list is scrollable with appropriate spacing, and the map is readable and interactive across all tested devices.
+  - Despite some challenges adjusting map height perfectly on desktop, the current implementation meets usability and responsiveness goals.
+
+**Final Result:** Confirmed working after fix. The layout is now clean, functional, and accessible across mobile and desktop.
+
 
 ---
 
