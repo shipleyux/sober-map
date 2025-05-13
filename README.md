@@ -92,8 +92,10 @@ These wireframes show the early ideas for how the site would look and work. They
 ### Files and Folders
 - **index.html**: The main Home page with the interactive map and podcasts.
 - **contact.html**: A form-based Contact page for user feedback.
-- **assets/**: Venue images and hero images.
+- **assets/**: Venue images.
 - **css/**: Custom stylesheets for the website.
+  - `styles.css`: Contains custom styling for homepage.
+  - `contact.css`: Contains custom styling for contact page.
 - **scripts/**:
   - `script.js`: Contains JavaScript for map interactivity and venue search.
   - `contact.js`: Contains JavaScript for contact page submission feedback modal.
