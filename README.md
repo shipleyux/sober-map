@@ -13,6 +13,7 @@
 - [Accessibility Testing](#accessibility-testing)
 - [Manual User Testing](#manual-user-testing)
 - [My Javascript Process](#my-process)
+- [Resubmission Enhancements](#resubmission-enhancements)
 - [Attribution](#attribution)
 
 ---
@@ -197,6 +198,11 @@ Errors Found
 
 ## Manual User Testing
 
+I’ve written this Manual Testing Report to show how I tested each fix and made sure everything worked properly across the site. Most of the bugs I came across were around layout issues and modal behaviour.
+
+They’ve all been logged in more detail in the [Bug Fix Report](bug-report.md), but this file (the [Manual Testing Report](testing.md)) walks through how I spotted them, what I expected to happen, and how I confirmed each one was resolved after making changes.
+
+
 
 
 ### As a site visitor
@@ -227,6 +233,25 @@ When working on the map functionality, I needed to display all the venues dynami
 By creating a structured list of venue details (like name, location, and rating), I was able to use a simple loop to handle them all. For each venue in the list, the code would add a marker to the map and display the details in a popup. This made the process feel manageable and gave me a lot of control over how each venue appeared on the map.
 
 Later, when working on the search bar, I noticed a small issue where typing part of a venue’s name could bring up multiple results that weren’t relevant. To fix this, I changed the search functionality to check if the venue names **start with** the search term, rather than just checking if they **include** it. This made the results more precise and avoided confusion.
+
+## Resubmission Enhancements
+
+Following feedback, I made several improvements to the project to enhance usability, layout, and overall user experience:
+
+- **Improved Venue Listing Layout:**  
+  I introduced a scrollable div and a responsive grid layout for the venue cards to make browsing smoother, especially on smaller screens.
+
+- **Interactive Venue Modals:**  
+  Instead of linking out to venue websites, each venue card now opens a modal popup with detailed information (like alcohol-free options and opening times). This creates a more engaging experience without taking users off the page.
+
+- **Contact Form Confirmation Modal:**  
+  After submitting the contact form, users now see a confirmation modal that auto-closes after a few seconds. This gives clear feedback and improves the flow.
+
+- **Hero Image Fix:**  
+  I fixed the broken hero image on the contact page so the layout now matches the rest of the site and looks more polished.
+
+All of these changes were tested manually and are logged in both the [Bug Fix Report](bug-report.md) and [Manual Testing Report](testing.md).
+
 
 ## Attribution
 
