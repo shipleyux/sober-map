@@ -1,7 +1,7 @@
 # Sober Map
 
 ## Table of Contents
-- [Introduction](#introduction)
+- [Welcome to Sober Map](#welcome-to-sober-map)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [User Stories](#user-stories)
