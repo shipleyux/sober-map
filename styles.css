@@ -7,20 +7,6 @@
 }
 
 
-@media (min-width: 992px) {
-  #map {
-    height: 75vh; /* Match venueScrollList for balanced height */
-  }
-}
-
-
-
-
-/* General content styling */
-#textContent {
-    margin-left: 2rem; 
-}
-
 /* Styling for the pubs list */
 #pubs {
     margin-top: 2.375rem; 
@@ -55,62 +41,7 @@ ul {
   justify-content: space-between;
 }
 
-/* Styling for the hero section */
-section.hero {
-    height: 39.75rem; /* Maintains a consistent section height */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-left: 8.875rem; 
-}
 
-/* Hero section content styling */
-.hero-content {
-    position: relative; /* Changed from absolute to relative */
-    background-color: white;
-    height: auto; 
-    width: auto; 
-    padding: 1.5rem; 
-    font-family: 'Poppins';
-    font-weight: bolder;
-    margin: 1rem auto; /* Center the content with auto margins */
-    max-width: 62.5rem; 
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* styling */
-    border-radius: 0.5rem; /* Rounded corners */
-}
-
-/* Base contact hero styles */
-section.hero.contact {
-  background-color: black;
-  margin-top: 4.5rem; /* Match navbar height */
-  height: 18rem; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem; /* Keep content from touching edges */
-  border-top: 1px solid #ddd; /* adds a divider from navbar */
-}
-
-/* Adjust height for larger screens */
-@media (min-width: 768px) {
-  section.hero.contact {
-    height: 20rem;
-  }
-}
-
-.hero-content.contact {
-  background-color: white;
-  padding: 1rem;
-  font-family: 'Poppins';
-  font-weight: bolder;
-  max-width: 48rem;
-  width: 100%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-}
 
 
 
@@ -136,13 +67,6 @@ nav {
 .custom-map-section {
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: 992px) {
-  .custom-map-section {
-    flex-direction: row;
-    height: auto;
-  }
 }
   
   
@@ -172,15 +96,24 @@ nav {
     padding-right: 1rem;
   }
   
-  @media (min-width: 62rem) {
-    #venueScrollList {
-      max-height: 75vh;
-    }
-  }
   
 
   body {
     padding-top: 4.5rem; /* Adjust based on navbar height */
+  }
+ 
+  
+  @media (min-width: 992px) {
+    #map {
+      height: 75vh; /* Match venueScrollList for balanced height */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .custom-map-section {
+      flex-direction: row;
+      height: auto;
+    }
   }
   
   
