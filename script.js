@@ -211,13 +211,12 @@ map.setView([52.488, -0.89], 7);
 
 
 // Add a tile layer
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: (
-        "&copy; <a href=\"https://www.openstreetmap.org/copyright\">" +
-        "OpenStreetMap</a> contributors"
-    ),
-    maxZoom: 19
+L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 18
 }).addTo(map);
+
 
 /**
  * Creates markers for each pub and binds popups
