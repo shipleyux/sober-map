@@ -183,9 +183,12 @@ Errors Found
 
 ## Lighthouse Analysis ##
  **Home Page**:
-### Performance Note (Lighthouse)
+### Lighthouse Performance Summary
 
 The Lighthouse Performance score for the deployed site is **72**, with Accessibility at **96**, Best Practices at **96**, and SEO at **91**.
+
+![Lighthouse performance score showing 71](assets/lighthouse71.png)
+
 
 #### Identified Issue:
 - **Largest Contentful Paint (LCP)** is the primary factor lowering the performance score.
@@ -201,6 +204,7 @@ The Lighthouse Performance score for the deployed site is **72**, with Accessibi
 - Preloaded hero image (when used).
 - Reduced map container size on smaller screens and optimised image dimensions.
 - Checked for unused CSS and minified styles where possible.
+- **Replaced the default OpenStreetMap tile layer with [Carto Light (no labels)](https://carto.com), a lightweight and visually minimal basemap**, to reduce render weight and improve load time.
 
 #### Outcome:
 Despite these changes, the LCP remains tied to the map rendering process. The map is critical to the application’s function, and removing or replacing it would compromise UX.
@@ -211,7 +215,7 @@ Despite these changes, the LCP remains tied to the map rendering process. The ma
 
  **Contact Page**:
 
- ![Site Mockup](assets/lh-contact.png)
+![Lighthouse contact page score](assets/contact-lighthouse.png)
 
 ## Accessibility Testing
 **Home Page**:
@@ -288,7 +292,9 @@ All of these changes were tested manually and are logged in both the [Bug Fix Re
 - **Images**: Venue images and contact page header image are sourced from respective websites and Unsplash.
 - **JavaScript Libraries**:
   - **Leaflet.js**: Used for map interactivity and code snippet to set map boundaries for London.
+  - **Carto Lite**: Tile layer source from carto.com, used ny leaflets api. 
   - **Bootstrap**: Used for responsive design.
 - **Google Fonts**: Fonts sourced from [Google Fonts](https://fonts.google.com).
+
 
 Special thanks to Spencer Bariball for his guidance throughout this project.

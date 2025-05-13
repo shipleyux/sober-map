@@ -209,7 +209,9 @@ var map = L.map("map");
 map.setView([52.488, -0.89], 7);
 
 
-
+// Tile layer source from Carto: https://carto.com
+// Attribution and tile URL provided by Carto's basemap service
+// Used under open license for performance and visual clarity
 // Add a tile layer
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
