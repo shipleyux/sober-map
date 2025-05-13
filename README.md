@@ -53,6 +53,7 @@ The project is built using **HTML5**, **CSS3**, **Bootstrap**, and **JavaScript*
   - Custom map markers with popups showing venue details like name, area, and rating.
 - **Venue Search**:
   - A dynamic search bar allowing users to filter venues by name.
+  - Modal popups with venue information.
   - Real-time updates to display matching venues.
 - **Contact Form**:
   - Users can submit feedback or request the addition of venues.
@@ -95,6 +96,7 @@ These wireframes show the early ideas for how the site would look and work. They
 - **css/**: Custom stylesheets for the website.
 - **scripts/**:
   - `script.js`: Contains JavaScript for map interactivity and venue search.
+  - `contact.js`: Contains JavaScript for contact page submission feedback modal.
 
 ---
 
