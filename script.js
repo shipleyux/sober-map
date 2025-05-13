@@ -1,5 +1,5 @@
-
-
+/*jslint browser */
+/*global bootstrap, document */
 /*global L, document */
 
 const pubs = [
@@ -205,7 +205,7 @@ const pubs = [
 
 
 // Initialize the map
-const map = L.map("map");
+var map = L.map("map");
 map.setView([52.488, -0.89], 7);
 
 
@@ -250,12 +250,12 @@ const searchBar = document.querySelector("[data-search]");
 searchBar.addEventListener("input", function (e) {
     const value = e.target.value.toUpperCase();
     const thePubs = document.getElementById("pubs").getElementsByTagName("li");
-    let i = 0;
+    var i = 0;
 
     while (i < thePubs.length) {
         const thePub = thePubs[i];
         const titleTag = thePub.getElementsByTagName("h2")[0];
-        let title = titleTag.textContent || titleTag.innerText;
+        var title = titleTag.textContent || titleTag.innerText;
         title = title.toUpperCase();
 
         if (title.startsWith(value)) {
@@ -288,25 +288,28 @@ makeMarkers(pubs);
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const modalElement = document.getElementById("venueModal");
-    const modal = new bootstrap.Modal(modalElement);
-    const modalTitle = document.getElementById("venueModalLabel");
-    const modalBody = document.getElementById("venueModalBody");
-    const modalLink = document.getElementById("venueModalLink");
-  
-    document.querySelectorAll(".open-modal").forEach(button => {
-      button.addEventListener("click", () => {
-        const title = button.getAttribute("data-title");
-        const body = button.getAttribute("data-body");
-        const link = button.getAttribute("data-link");
-  
-        modalTitle.textContent = title;
-        modalBody.innerHTML = body;
+    "use strict";
 
-        modalLink.href = link;
-  
-        modal.show(); // open the modal
-      });
+    var modalElement = document.getElementById("venueModal");
+    var modal = new bootstrap.Modal(modalElement);
+    var modalTitle = document.getElementById("venueModalLabel");
+    var modalBody = document.getElementById("venueModalBody");
+    var modalLink = document.getElementById("venueModalLink");
+    var buttons = document.querySelectorAll(".open-modal");
+
+    buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            var title = button.getAttribute("data-title");
+            var body = button.getAttribute("data-body");
+            var link = button.getAttribute("data-link");
+
+            modalTitle.textContent = title;
+            modalBody.innerHTML = body;
+            modalLink.href = link;
+
+            modal.show();
+        });
     });
-  });
+});
+
   

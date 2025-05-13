@@ -1,16 +1,27 @@
+/*jslint browser */
+/*global bootstrap, window, document, setTimeout */
+
 window.addEventListener("load", function () {
-  const contactForm = document.getElementById("contactForm");
-  const modalElement = document.getElementById("submittedModal");
+  "use strict";
+
+  var contactForm;
+  var modalElement;
+  var submittedModal;
+
+  contactForm = document.getElementById("contactForm");
+  modalElement = document.getElementById("submittedModal");
+
   if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const submittedModal = new bootstrap.Modal(modalElement);
-      submittedModal.show();
-      contactForm.reset();
-      // Auto-close modal after 5 seconds
-      setTimeout(() => {
-        submittedModal.hide();
-      }, 5000);
-    });
+      contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          submittedModal = new bootstrap.Modal(modalElement);
+          submittedModal.show();
+          contactForm.reset();
+
+          setTimeout(function () {
+              submittedModal.hide();
+          }, 5000);
+      });
   }
 });
