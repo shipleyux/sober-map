@@ -345,7 +345,7 @@ Following feedback, I made several improvements to the project to enhance usabil
   After submitting the contact form, users now see a confirmation modal that auto-closes after a few seconds. This gives clear feedback and improves the flow.
 
 - **Hero Image Fix:**  
-  I fixed the broken hero image on the contact page so the layout now matches the rest of the site and looks more polished.
+  I removed the broken hero image on the contact page so the layout now matches the rest of the site and looks more polished.
 
 - **Added a custom favicon:** 
 Converted the project logo into a `.ico` format and added it to the site root. This eliminates the default 404 favicon error and improves site polish by displaying a branded icon in browser tabs.
