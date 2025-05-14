@@ -20,7 +20,7 @@
 
 ## Welcome to Sober Map
 
-![Site Mockup](assets/mock-up2.png)
+![Site Mockup](assets/mockup.png)
 
 **Sober Map** is an interactive front-end website designed to support people in London seeking a sober lifestyle. It features an **interactive map** of venues offering great non-alcoholic options.
 
