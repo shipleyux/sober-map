@@ -270,14 +270,28 @@ The deployed project will now be accessible via the GitHub Pages URL provided.
 ## Accessibility Testing
 
 <details>
+
+  ### Accessibility Alerts Justification
+
+During accessibility testing with WAVE and Lighthouse, a small number of alerts were flagged. These have been reviewed and are not accessibility errors. Each was the result of a conscious design decision made to enhance the user experience.
+
+ ![Site Mockup](assets/wave-home.png)
   <summary><strong>Home Page</strong></summary>
+
+1. **Heading Structure Alert**  
+   The venue cards use `<h2>` tags to provide semantic structure and assist screen reader users with navigation. Although these follow the main `<h1>` in the hero section, the alert was triggered due to the separation between the hero and main content. This heading structure is appropriate and does not impact usability or accessibility.
+
+2. **Redundant Link Alert**  
+   A contact link appears in both the site navigation and the venue search section. This was an intentional UX decision to ensure users always have a clear and contextual route to get in touch, whether browsing the site or searching for a venue. The duplication improves discoverability and user support without affecting screen reader navigation.
+
+> No accessibility **errors** were reported. The remaining alerts are minor, expected, and the result of considered design decisions. The site remains compliant with accessibility guidelines and is fully usable with screen readers and keyboard navigation.
+
 
   **Fixes**  
   - Changed all `<h5>` tags to `<h2>` to avoid skipped heading levels  
   - Added `<label>` tag to search bar  
 
-  ![Site Mockup](assets/wave-index.png)
-
+ 
 </details>
 
 <details>
