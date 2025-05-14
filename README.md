@@ -384,7 +384,7 @@ All of these changes were tested manually and are logged in both the [Bug Fix Re
 - **Images**: Venue images and contact page header image are sourced from respective websites and Unsplash.
 - **JavaScript Libraries**:
   - **Leaflet.js**: Used for map interactivity and code snippet to set map boundaries for London.
-  - **Carto Lite**: Tile layer source from carto.com, used ny leaflets api. 
+  - **Carto Lite**: Tile layer source from carto.com, used by leaflets api. 
   - **Bootstrap**: Used for responsive design.
 - **Google Fonts**: Fonts sourced from [Google Fonts](https://fonts.google.com).
 
