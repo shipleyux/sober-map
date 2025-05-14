@@ -297,7 +297,12 @@ During accessibility testing with WAVE and Lighthouse, a small number of alerts 
 <details>
   <summary><strong>Contact Page</strong></summary>
 
+### Accessibility Fix: Skipped Heading Level
+
+An accessibility alert was triggered due to a skipped heading level in the modal title. This was resolved by updating the modal’s `<h5>` heading to an `<h2>`, maintaining a logical heading structure after the main `<h1>` and ensuring better accessibility for screen reader users.
+
   ![Site Mockup](assets/wave-contact.png)
+
 
 </details>
 
@@ -317,8 +322,8 @@ During accessibility testing with WAVE and Lighthouse, a small number of alerts 
 
 
 
-
-### As a site visitor
+<details>
+<summary><strong>As a site visitor</strong></summary>
 
 | User Story | Acceptance Criteria / Tests Performed |
 |------------|----------------------------------------|
@@ -328,13 +333,18 @@ During accessibility testing with WAVE and Lighthouse, a small number of alerts 
 | I want to view venues on an interactive map | - Leaflet map initialises on page load<br>- Pins appear for each venue with correct coordinates<br>- Clicking a pin shows popup with venue title, Sober Points, and area |
 | I want the layout to work on both desktop and mobile | - Tested on various screen sizes using browser dev tools<br>- Map and venue list stack vertically on mobile<br>- Navigation is accessible via a toggler on smaller screens |
 
-### As a content editor (admin)
+</details>
+
+<details>
+
+<summary><strong>As a content editor (admin)</strong></summary>
 
 | User Story | Acceptance Criteria / Tests Performed |
 |------------|----------------------------------------|
 | I want to update venue info without breaking the modal | - Venue details (title, description, opening times) are added using `data-*` attributes in the HTML<br>- No JavaScript changes are required per venue update<br>- Non-breaking HTML tags (e.g., `<p>`, `<br>`, `<strong>`) render safely in modals |
 | I want to ensure all modals work dynamically | - Reusable Bootstrap modal displays unique content for each venue<br>- Modal updates dynamically based on button’s `data-title`, `data-body`, and `data-link`<br>- Tested multiple venues to confirm no conflict or overlap |
 
+</details>
 
 
    
