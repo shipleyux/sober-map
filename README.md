@@ -149,94 +149,137 @@ The deployed project will now be accessible via the GitHub Pages URL provided.
 ---
 
 ## Code Validation Testing
-**HTML Validator**:
-Errors Found
- ![Site Mockup](assets/index-html-validation1.png)
+<details>
+  <summary><strong>HTML Validator</strong></summary>
 
-   Fixes
-   - removed container element
-   - removed rougue paragraph tag
-   - remove redundant / from leaflet link
-   - moved ul tag to make structure compliant. 
+  **Errors Found**  
+  ![Site Mockup](assets/index-html-validation1.png)
 
- **Index Page Pass After Fixes**:
-   ![Site Mockup](assets/index-html.png)
+  **Fixes**  
+  - Removed container element  
+  - Removed rogue paragraph tag  
+  - Removed redundant `/` from Leaflet link  
+  - Moved `ul` tag to make structure compliant  
 
- **Contact Page Pass**:
-   ![Site Mockup](assets/index-html.png)
+</details>
 
- **CSS Pass**:
-   ![Site Mockup](assets/index-html.png)
+<details>
+  <summary><strong>Index Page Pass After Fixes</strong></summary>
 
-**JSLint**:
+  ![Site Mockup](assets/index-html.png)
 
-*Here is a breakdown of the fixes implemented to correct the JSlint warnings* 
-- Use 4 spaces for each level of indentation.
-- Correct placement of braces.
-- Remove trailing spaces
-- add one space after commas in arrays and objects.
-- correct function formatting.
-- use double quotes instead of single quotes for strings.
-- remove extra spaces between elements.
-- Add missing global declaration for the leaflet api. 
+</details>
 
-   ![Site Mockup](assets/jslint.png)
+<details>
+  <summary><strong>Contact Page Pass</strong></summary>
+
+  ![Site Mockup](assets/index-html.png)
+
+</details>
+
+<details>
+  <summary><strong>CSS Pass</strong></summary>
+
+  ![Site Mockup](assets/index-html.png)
+
+</details>
+
+<details>
+  <summary><strong>JSLint</strong></summary>
+
+  **Fixes Implemented**
+  - Use 4 spaces for each level of indentation  
+  - Correct placement of braces  
+  - Remove trailing spaces  
+  - Add one space after commas in arrays and objects  
+  - Correct function formatting  
+  - Use double quotes instead of single quotes for strings  
+  - Remove extra spaces between elements  
+  - Add missing global declaration for the Leaflet API  
+
+  ![Site Mockup](assets/jslint.png)
+
+</details>
 
 
 ## Lighthouse Analysis ##
- **Home Page**:
-### Lighthouse Performance Summary
 
-The Lighthouse Performance score for the deployed site is **72**, with Accessibility at **96**, Best Practices at **96**, and SEO at **91**.
+<details>
+  <summary><strong>Home Page</strong></summary>
 
-![Lighthouse performance score showing 71](assets/lighthouse71.png)
+  ### Lighthouse Performance Summary
 
+  The Lighthouse Performance score for the deployed site is **72**, with Accessibility at **96**, Best Practices at **96**, and SEO at **91**.
 
-#### Identified Issue:
-- **Largest Contentful Paint (LCP)** is the primary factor lowering the performance score.
-- The interactive **Leaflet.js map** component is the LCP element and contributes significantly to load time.
-- Optimisation opportunities flagged include:
-  - Preloading the LCP image
-  - Using next-gen formats
-  - Minimising unused CSS and JavaScript
+  ![Lighthouse performance score showing 71](assets/lighthouse71.png)
 
-#### Actions Taken:
-- Deferred map rendering using a `setTimeout` to delay load.
-- Used `map.invalidateSize()` after layout shifts to improve visibility.
-- Preloaded hero image (when used).
-- Reduced map container size on smaller screens and optimised image dimensions.
-- Checked for unused CSS and minified styles where possible.
-- **Replaced the default OpenStreetMap tile layer with [Carto Light (no labels)](https://carto.com), a lightweight and visually minimal basemap**, to reduce render weight and improve load time.
+  #### Identified Issue:
+  - **Largest Contentful Paint (LCP)** is the primary factor lowering the performance score.
+  - The interactive **Leaflet.js map** component is the LCP element and contributes significantly to load time.
+  - Optimisation opportunities flagged include:
+    - Preloading the LCP image  
+    - Using next-gen formats  
+    - Minimising unused CSS and JavaScript  
 
-#### Outcome:
-Despite these changes, the LCP remains tied to the map rendering process. The map is critical to the application’s function, and removing or replacing it would compromise UX.
+  #### Actions Taken:
+  - Deferred map rendering using a `setTimeout` to delay load  
+  - Used `map.invalidateSize()` after layout shifts to improve visibility  
+  - Preloaded hero image (when used)  
+  - Reduced map container size on smaller screens and optimised image dimensions  
+  - Checked for unused CSS and minified styles where possible  
+  - **Replaced the default OpenStreetMap tile layer with [Carto Light (no labels)](https://carto.com)**, a lightweight and visually minimal basemap  
 
-> The map loads successfully across all tested devices and remains fully interactive. There is **no visible lag or broken layout**, and **usability remains high**. The slight performance drop does not affect accessibility, interactivity, or functionality.
+  #### Outcome:
+  Despite these changes, the LCP remains tied to the map rendering process. The map is critical to the application’s function, and removing or replacing it would compromise UX.
 
-**Conclusion:** Performance optimisations have been documented and implemented where feasible. Further gains would require server-side improvements or map abstraction. The application remains compliant with the learning outcome criteria.
+  > The map loads successfully across all tested devices and remains fully interactive. There is **no visible lag or broken layout**, and **usability remains high**. The slight performance drop does not affect accessibility, interactivity, or functionality.
 
- **Contact Page**:
+  **Conclusion:**  
+  Performance optimisations have been documented and implemented where feasible. Further gains would require server-side improvements or map abstraction. The application remains compliant with the learning outcome criteria.
 
-![Lighthouse contact page score](assets/contact-lighthouse.png)
+</details>
+
+<details>
+  <summary><strong>Contact Page</strong></summary>
+
+  ![Lighthouse contact page score](assets/contact-lighthouse.png)
+
+</details>
+
 
 ## Accessibility Testing
-**Home Page**:
 
- **Fixes**
-- changed all H5 to H2 to avoid skipped level heading.
-- Add label tag to search bar
+<details>
+  <summary><strong>Home Page</strong></summary>
 
- ![Site Mockup](assets/wave-index.png)
+  **Fixes**  
+  - Changed all `<h5>` tags to `<h2>` to avoid skipped heading levels  
+  - Added `<label>` tag to search bar  
 
-**Contact Page**:
+  ![Site Mockup](assets/wave-index.png)
 
-   ![Site Mockup](assets/wave-contact.png)
+</details>
+
+<details>
+  <summary><strong>Contact Page</strong></summary>
+
+  ![Site Mockup](assets/wave-contact.png)
+
+</details>
 
 ## Manual User Testing
 
-I’ve written this Manual Testing Report to show how I tested each fix and made sure everything worked properly across the site. Most of the bugs I came across were around layout issues and modal behaviour.
+<details>
+  <summary><strong>View Manual Testing Summary</strong></summary>
 
-They’ve all been logged in more detail in the [Bug Fix Report](bug-report.md), but this file (the [Manual Testing Report](testing.md)) walks through how I spotted them, what I expected to happen, and how I confirmed each one was resolved after making changes.
+  I’ve written this Manual Testing Report to show how I tested each fix and made sure everything worked properly across the site.  
+  Most of the bugs I came across were around layout issues and modal behaviour.
+
+  They’ve all been logged in more detail in the [Bug Fix Report](bug-report.md),  
+  but this file (the [Manual Testing Report](testing.md)) walks through how I spotted them, what I expected to happen, and how I confirmed each one was resolved after making changes.
+
+</details>
+
 
 
 
