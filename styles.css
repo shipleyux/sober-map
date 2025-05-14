@@ -2,7 +2,7 @@
 #map {
   width: 100%;
   min-height: 18.75rem; 
-  border: 0.0625rem solid #ccc; /* 1px */
+  border: 0.0625rem solid #ccc; 
 }
 
 /* Styling for the pubs list */
@@ -21,8 +21,8 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); /* 4px 12px */
-  border-radius: 0.5rem; /* 8px */
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); 
+  border-radius: 0.5rem;
 }
 
 /* Ensures all card images are the same size */
@@ -67,7 +67,7 @@ nav {
 }
 
 #searchHeader {
-  padding-top: 0.5rem; /* 8px */
+  padding-top: 0.5rem; 
 }
 
 #pubs {
