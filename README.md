@@ -12,7 +12,7 @@
 - [Code Validation Testing](#code-validation-testing)
 - [Accessibility Testing](#accessibility-testing)
 - [Manual User Testing](#manual-user-testing)
-- [My Javascript Process](#my-process)
+- [My Javascript Process](#my-javascript-process)
 - [Resubmission Enhancements](#resubmission-enhancements)
 - [Attribution](#attribution)
 
