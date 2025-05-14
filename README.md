@@ -73,19 +73,39 @@ These wireframes show the early ideas for how the site would look and work. They
 
 ## User Stories
 
-### User Story 1: Exploring Venues
+<details>
+  <summary><strong>User Story 1: Exploring Venues</strong></summary>
+
 **As a user**, I want to explore venues that offer non-alcoholic drink options, so I can find suitable places to socialise without alcohol.
+
 - **Implementation**: The interactive map lists venues with details and links for further information.
 
-### User Story 2: Searching for a Venue
+![Map](assets/user-map-modal.png)
+
+</details>
+
+<details>
+  <summary><strong>User Story 2: Searching for a Venue</strong></summary>
+
 **As a user**, I want to search for a specific venue by name, so I can quickly find information on places I’m interested in.
+
 - **Implementation**: A search bar dynamically filters the venue list and updates the display.
 
-### User Story 3: Providing Feedback
+![Search bar](assets/user-search.png)
+
+</details>
+
+<details>
+  <summary><strong>User Story 3: Providing Feedback</strong></summary>
+
 **As a user**, I want to contact the site creators to suggest new venues or ask questions, so I can contribute to the growing community.
+
 - **Implementation**: The Contact page includes a form for user messages.
 
----
+![Contact form](assets/user-contact.png)
+
+</details>
+
 
 ## Project Structure
 
