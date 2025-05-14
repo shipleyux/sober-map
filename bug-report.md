@@ -48,18 +48,21 @@ modalBody.innerHTML = body;
 ### Bug Fix: Responsive Map & Venue List Layout
 
 **Issue:**  
-On smaller screens, the map and venue list layout broke or became cramped due to fixed widths and inflexible containers.
+### Layout Issue on Smaller Screens
+
+On smaller screens, the map and venue list layout previously became cramped or broke due to fixed widths and inflexible containers.
 
 **Fix:**  
-- Replaced fixed inline styles with Bootstrap responsive utility classes.  
-- Used `flex-column` on mobile and `flex-lg-row` on larger screens.  
-- Enforced consistent map height with custom CSS.  
-- Used `map.invalidateSize()` after layout shift to ensure correct rendering.
+- Replaced rigid layout with responsive Bootstrap grid: `flex-column-reverse flex-lg-row` ensures the map and venue list stack vertically on mobile and sit side-by-side on desktop.  
+- Used Bootstrap's `col-12 col-lg-6` classes to create two equal-width columns on larger screens.  
+- Applied responsive map height via custom CSS: `25rem` on mobile, `75vh` on desktop using media queries.  
+- Added `map.invalidateSize()` after DOM load to ensure correct map rendering when layout shifts.
 
-**Files updated:**
+**Files updated:**  
 - `index.html`  
 - `styles.css`  
 - `script.js`
+
 
 ---
 

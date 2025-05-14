@@ -291,6 +291,12 @@ makeMarkers(pubs);
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
 
+
+    // Delay to ensure layout stabilises before recalculating map size
+    setTimeout(function () {
+        map.invalidateSize();
+    }, 300);
+
     var modalElement = document.getElementById("venueModal");
     var modal = new bootstrap.Modal(modalElement);
     var modalTitle = document.getElementById("venueModalLabel");

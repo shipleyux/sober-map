@@ -1,6 +1,6 @@
 ## Manual Testing Report
 
-During development, I carried out manual testing across different features of the site to make sure everything worked smoothly, especially after resolving some layout and modal bugs. Issues were tracked and documented in the [Bug Fix Report](#bug-report) (see above), and this section outlines how I tested each fix and feature to confirm they were resolved.
+During development, I carried out manual testing across different features of the site to make sure everything worked smoothly, especially after resolving some layout and modal bugs. Issues were tracked and documented in the [Bug Fix Report](#bug-report), and this section outlines how I tested each fix and feature to confirm they were resolved.
 
 ---
 
@@ -70,7 +70,7 @@ During development, I carried out manual testing across different features of th
 
 To improve the site's performance metrics—particularly **Largest Contentful Paint (LCP)** and **First Contentful Paint (FCP)**—the hero background image on the contact page was removed and replaced with a solid background color.
 
-Hero images, especially large or uncompressed ones, can significantly delay the time it takes for meaningful content to appear on screen. By removing the image, we reduced the overall **page weight**, improved **load speed**, and provided a faster, more responsive experience, particularly on mobile devices or slower connections.
+Hero images, especially large or uncompressed ones, can significantly delay the time it takes for meaningful content to appear on screen. By removing the image, I reduced the overall **page weight**, improved **load speed**, and provided a faster, more responsive experience, particularly on mobile devices or slower connections.
 
 This change contributed to an increase in the Lighthouse **Performance** score without negatively affecting the user experience or design clarity.
 

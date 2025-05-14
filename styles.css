@@ -1,20 +1,18 @@
 /* General styling for the map container */
 #map {
   width: 100%;
-  min-height: 300px;
-  height: 300px;
-  border: 1px solid #ccc;
+  min-height: 18.75rem; 
+  border: 0.0625rem solid #ccc; /* 1px */
 }
-
 
 /* Styling for the pubs list */
 #pubs {
-    margin-top: 2.375rem; 
+  margin-top: 2.375rem;
 }
 
 /* Remove bullets from lists */
 ul {
-    list-style: none; /* Remove bullets */
+  list-style: none; /* Remove bullets */
 }
 
 /* Card styles */
@@ -23,14 +21,14 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); /* 4px 12px */
+  border-radius: 0.5rem; /* 8px */
 }
 
 /* Ensures all card images are the same size */
 .card-img-top {
   width: 100%;
-  height: 12rem;
+  height: 12rem; 
   object-fit: cover;
 }
 
@@ -41,13 +39,9 @@ ul {
   justify-content: space-between;
 }
 
-
-
-
-
 /* Form button spacing */
 form button {
-    margin-top: 1rem; /* Add spacing above buttons */
+  margin-top: 1rem; 
 }
 
 /* Navbar styling */
@@ -58,62 +52,54 @@ nav {
 
 /* Styling for the search bar */
 #searchBar {
-    margin-bottom: 1rem; 
-    max-width: 18.75rem;
+  margin-bottom: 1rem; 
+  max-width: 18.75rem; 
 }
-
-
 
 .custom-map-section {
   display: flex;
   flex-direction: column;
 }
-  
-  
-  #venue-list {
-    height: calc(100vh - 5rem); 
-    overflow: hidden; /* prevent double scroll */
-  }
-  
-  #searchHeader {
-    padding-top: 0.5rem; 
-  }
 
-  #pubs {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    gap: 1.5rem;
-    padding: 0;
-  }
+#venue-list {
+  height: calc(100vh - 5rem); /* 80px */
+  overflow: hidden; /* prevent double scroll */
+}
 
-  #pubs li {
-    list-style: none;
-  }
-  
-  #venueScrollList {
-    max-height: 60vh; /* Allow scrolling space on mobile */
-    overflow-y: auto;
-    padding-right: 1rem;
-  }
-  
-  
+#searchHeader {
+  padding-top: 0.5rem; /* 8px */
+}
 
-  body {
-    padding-top: 4.5rem; /* Adjust based on navbar height */
+#pubs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
+  gap: 1.5rem;
+  padding: 0;
+}
+
+#pubs li {
+  list-style: none;
+}
+
+#venueScrollList {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 1rem; 
+}
+
+body {
+  padding-top: 4.5rem; 
+}
+
+@media (min-width: 62rem) { 
+  #map {
+    height: 75vh;
   }
- 
-  
-  @media (min-width: 992px) {
-    #map {
-      height: 75vh; /* Match venueScrollList for balanced height */
-    }
+}
+
+@media (min-width: 62rem) {
+  .custom-map-section {
+    flex-direction: row;
+    height: auto;
   }
-  
-  @media (min-width: 992px) {
-    .custom-map-section {
-      flex-direction: row;
-      height: auto;
-    }
-  }
-  
-  
+}
