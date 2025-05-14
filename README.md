@@ -90,7 +90,7 @@ These wireframes show the early ideas for how the site would look and work. They
 ## Project Structure
 
 ### Files and Folders
-- **index.html**: The main Home page with the interactive map and podcasts.
+- **index.html**: The main Home page with the interactive map.
 - **contact.html**: A form-based Contact page for user feedback.
 - **assets/**: Venue images.
 - **css/**: Custom stylesheets for the website.
